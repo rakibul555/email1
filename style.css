@@ -1,0 +1,158 @@
+
+/* calling google font */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+/* font-family: 'Titillium Web', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #ddd;
+}
+
+
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.email-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 700px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+
+
+.email-grid::after {content: '';position: absolute;left: 0;top: 0;width: 25%;height: 100%;background: blue;}
+
+.email-grid-item-img {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.email-grid-item-img img{
+    max-width: 100%;
+}
+
+
+
+
+
+.email-grid-item-social{
+    position: relative;
+
+}
+
+.email-grid-item-social .social-link {
+    display: inline-block;
+}
+
+.email-grid-item-social .social-link ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    width: 12px;
+    height: 12px;
+    background: blue;
+    color: #fff;
+    text-align: center;
+    line-height: 9px;
+    margin: 3px;
+    border-radius: 100%;
+}
+
+
+.email-grid-item-social .social-link ul li a {
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+.contact {
+    margin-top: 67px;
+}
+
+.contact p {
+    line-height: 27px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    opacity: .7;
+}
+
+
+.email-grid-item-content h2 {
+    color: blue;
+    font-size: 34px;
+    margin-top: -12px;
+}
+
+.email-grid-item-content h4 {
+    opacity: .7;
+    text-transform: uppercase;
+    margin-top: -8px;
+    font-size: 15px;
+}
+
+.address {
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+.address h5 {
+    text-transform: lowercase;
+    opacity: 1;
+    color: #000;
+    font-size: 15px;
+}
+
+.address p {
+    opacity: .7;
+    letter-spacing: 1px;
+}
+
+/* media */
+
+
+@media screen and (max-width: 768px) {
+    .email-grid {
+        grid-template-columns: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .email-grid::after {
+        display: none;
+    }
+
+    .email-grid-item-social {
+        margin-top: 50px;
+    }
+
+    .contact {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
